@@ -3,7 +3,7 @@
 ### Utilidades de consola AVANZADA
 
 1. [Qué es ACONSOLE](#queEs)
-2. [De qué se compone](#queTiene)
+
 
 <a name="queEs"></a>
 ### ¿Qué es ACONSOLE? ###
