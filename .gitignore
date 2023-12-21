@@ -1,0 +1,6 @@
+# Carpetas a ignorar
+out/production
+out/doc
+.idea/
+# Ficheros a ignorar
+AConsole.iml
