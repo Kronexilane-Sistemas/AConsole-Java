@@ -2,11 +2,6 @@
 
 ### Utilidades de consola AVANZADA
 
-1. [Qué es ACONSOLE](#queEs)
-
-
-<a name="queEs"></a>
-### ¿Qué es ACONSOLE? ###
 AConsole o ADVANCED console son un conjunto de rutinas que permiten mejorar o facilitar la creación
 de aplicaciones de consola.
 Por ahora los paquetes son los siguientes:
@@ -23,6 +18,6 @@ Por ahora los paquetes son los siguientes:
 Recomendamos echar un vistazo al JAVADOC de la libreria para poderla utilizar eficientemente.
 
 El proyecto del repositorio DEJA-ACONSOLE-DEMO muestra un ejemplo combinado de ENTRADA/SALIDA y tablas
-formateadas usando DEJA contra una base de datos de prueba.
+formateadas usando DEJA contra la tabla de una base de datos de prueba.
 
 
