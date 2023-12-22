@@ -9,7 +9,7 @@ import java.util.List;
  */
 public abstract class CLineAction {
 
-    protected boolean executed=false;
+    private boolean executed=false;
 
     /**
      * Implementa el método de acción al invocar el parámetro en la línea de comandos
@@ -19,6 +19,21 @@ public abstract class CLineAction {
      */
     public abstract void DoIt(String parameter,List<String> subParams);
 
+    /**
+     * Establece el estado de la ejecución de la opción en TRUE
+     * para evitar que sea ejecutado más veces si aparece dicha
+     * opción en la línea de comando
+     */
+    protected void Done(){
+        this.executed=true;
+    }
+
+    /**
+     * Estable el estado de la ejecución de la opción en FALSE
+     */
+    protected void ClearDone(){
+        this.executed=false;
+    }
 
     /**
      * Este método de clase ABSTRACTA es heredado y evita que se ejecuten
@@ -29,4 +44,5 @@ public abstract class CLineAction {
     public boolean isExecuted() {
         return executed;
     }
+
 }

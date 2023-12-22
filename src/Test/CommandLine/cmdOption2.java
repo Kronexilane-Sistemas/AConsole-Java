@@ -16,6 +16,6 @@ public class cmdOption2 extends CLineAction{
             System.out.println("Subparámetros de '"+parameter+"':");
             subParams.forEach(System.out::println);
         }
-        super.executed=true;
+        super.Done();
     }
 }

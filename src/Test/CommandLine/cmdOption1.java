@@ -10,6 +10,6 @@ public class cmdOption1 extends CLineAction{
     @Override
     public void DoIt(String parameter, List<String> subParams) {
         System.out.println("Está es la opción 1");
-        super.executed=true;
+        super.Done();
     }
 }

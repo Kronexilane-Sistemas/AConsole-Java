@@ -13,6 +13,6 @@ public class cmdDefault extends CLineAction{
         String msg="Esta opción se ejecuta siempre sin ningún parámetro (DEFECTO)";
         Output.setBox(new mbELEGANT());
         Output.msgBox(msg);
-        super.executed=true;
+        super.Done();
     }
 }
