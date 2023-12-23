@@ -18,7 +18,7 @@ Por ahora los paquetes son los siguientes:
 
 Recomendamos echar un vistazo al JAVADOC de la libreria para poderla utilizar eficientemente.
 
-El proyecto del repositorio DEJA-ACONSOLE-DEMO muestra un ejemplo combinado de ENTRADA/SALIDA y tablas
+El proyecto del repositorio DEJA-ACONSOLE-TEST muestra un ejemplo combinado de ENTRADA/SALIDA y tablas
 formateadas usando DEJA contra la tabla de una base de datos de prueba.
 
 
