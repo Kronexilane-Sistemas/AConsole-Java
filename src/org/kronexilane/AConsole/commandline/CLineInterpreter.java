@@ -48,7 +48,12 @@ public class CLineInterpreter {
                 commands.remove(0);
 
                 // Procesa los comandos
-                commands.forEach(CLineInterpreter::process);
+                if(!commands.isEmpty()) {
+                    commands.forEach(CLineInterpreter::process);
+                }
+                else {
+                    throw new IllegalArgumentException();
+                }
             }
         }catch (IndexOutOfBoundsException|IllegalArgumentException|NullPointerException ignored){
             System.out.println("Ningún parámetro específicado");
@@ -63,12 +68,13 @@ public class CLineInterpreter {
         String command=subCommands[0];
         List<String> subParams= Arrays.stream(subCommands).collect(Collectors.toList());
         subParams.remove(0);
+
         try {
             CLineAction execute=CMDLOptions.get(command);
             if(!execute.isExecuted()) {
                 CMDLOptions.get(command).DoIt(command,subParams);
             }
-        }catch(NullPointerException ignored){
+        }catch(NullPointerException|IllegalArgumentException ignored){
             System.out.println("parámetro '"+command+"' no existe.");
 
         }
